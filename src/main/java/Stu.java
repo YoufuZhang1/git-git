@@ -9,5 +9,6 @@ public class Stu {
         System.out.println("master1........");
         System.out.println("hot-fox1........");
         System.out.println("push........");
+        System.out.println("pull........");
     }
 }
