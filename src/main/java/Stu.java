@@ -5,5 +5,6 @@ public class Stu {
         System.out.println("学习git的第二天。。。");
         System.out.println("学习git的第三天。。。");
         System.out.println("学习git的第4天。。。");
+        System.out.println("hot-fox........");
     }
 }
