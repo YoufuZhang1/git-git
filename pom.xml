@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>git</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!--变量管理-->
+    <properties>
+        <!--spring核心，1个依赖-->
+        <spring-context.version>5.3.20</spring-context.version>
+        <spring-aspects.version>${spring-context.version}</spring-aspects.version>
+
+
+        <!--持久化依赖5个依赖-->
+        <mybatis.version>3.5.7</mybatis.version>
+        <mysql.connector>8.0.15</mysql.connector>
+        <mybatis-spring.version>2.0.7</mybatis-spring.version>
+        <spring-jdbc.version>${spring-context.version}</spring-jdbc.version>
+        <druid.version>1.2.9</druid.version>
+
+        <!--junit5的7个依赖-->
+        <spring-test.version>${spring-context.version}</spring-test.version>
+        <junit-jupiter-api.version>5.8.2</junit-jupiter-api.version>
+        <junit-jupiter-engine.version>5.8.2</junit-jupiter-engine.version>
+        <junit-jupiter.version>5.8.2</junit-jupiter.version>
+        <junit-jupiter-params.version>5.8.2</junit-jupiter-params.version>
+        <junit-vintage-engine.version>5.8.2</junit-vintage-engine.version>
+        <junit-platform-launcher.version>1.8.2</junit-platform-launcher.version>
+
+        <!--web的3个依赖-->
+        <servlet.version>4.0.1</servlet.version>
+        <jstl.version>1.2</jstl.version>
+        <spring-webmvc.version>5.3.20</spring-webmvc.version>
+
+
+        <!--json框架-->
+        <jackson-databind.version>2.13.3</jackson-databind.version>
+
+        <!--工具的4个依赖-->
+        <lombok.version>1.18.24</lombok.version>
+        <junit.version>4.13.1</junit.version>
+        <jdk.version>1.8</jdk.version>
+        <jdk.encoding>UTF-8</jdk.encoding>
+    </properties>
+
+    <build>
+        <plugins>
+            <!--JDK编译设置-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
+                    <encoding>${jdk.encoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
