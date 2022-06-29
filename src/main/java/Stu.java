@@ -5,5 +5,6 @@
 public class Stu {
     public static void main(String[] args) {
         System.out.println("学习git的第一天。。。");
+        System.out.println("学习git的第二天。。。");
     }
 }
